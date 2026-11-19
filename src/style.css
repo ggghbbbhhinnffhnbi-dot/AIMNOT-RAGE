@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #090909;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#app {
+  width: min(100% - 28px, 600px);
+  margin: auto;
+  padding: 24px 0;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+
+h1 span {
+  color: #ff2525;
+}
+
+header p,
+.tip {
+  color: #999;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  margin: 28px 0;
+}
+
+.stats div {
+  background: #181818;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 14px 8px;
+  flex: 1;
+  font-size: 11px;
+}
+
+.stats strong {
+  display: block;
+  color: #ff3333;
+  font-size: 23px;
+  margin-top: 8px;
+}
+
+#start {
+  width: 100%;
+  padding: 16px;
+  border: 0;
+  border-radius: 10px;
+  background: #e92323;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#arena {
+  position: relative;
+  height: 420px;
+  margin-top: 18px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid #444;
+  border-radius: 14px;
+  touch-action: manipulation;
+}
+
+#target {
+  display: none;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: #ff2525;
+  box-shadow: 0 0 18px #ff2525;
+  touch-action: manipulation;
+}
+
+#message {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  color: #aaa;
+  font-weight: bold;
+}
+
+.tip {
+  font-size: 13px;
+  margin-top: 20px;
+}
