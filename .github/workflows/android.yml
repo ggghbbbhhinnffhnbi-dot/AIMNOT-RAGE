@@ -24,7 +24,10 @@ jobs:
 
       - name: Configurar Android SDK
         uses: android-actions/setup-android@v3
-
+        
+        - name: Aceitar licenças Android
+        run: yes | sdkmanager --licenses
+      
       - name: Instalar dependências
         run: npm install
 
