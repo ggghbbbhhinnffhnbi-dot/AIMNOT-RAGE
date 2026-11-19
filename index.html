@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>AIMNOT RAGE</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>AIMNOT <span>RAGE</span></h1>
+      <p>Treinamento de precisão</p>
+    </header>
+
+    <section class="stats">
+      <div>PONTOS <strong id="score">0</strong></div>
+      <div>TEMPO <strong id="time">30</strong></div>
+      <div>ACERTO <strong id="accuracy">0%</strong></div>
+    </section>
+
+    <button id="start">INICIAR TREINO</button>
+
+    <div id="arena">
+      <div id="message">TOQUE EM INICIAR</div>
+      <button id="target" aria-label="Alvo"></button>
+    </div>
+
+    <p class="tip">Toque nos alvos antes que o tempo termine.</p>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
