@@ -2,8 +2,9 @@
   "name": "aimnot-rage",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "vite"
+    "build": "vite build"
   },
   "dependencies": {
     "@capacitor/core": "^7.0.0",
